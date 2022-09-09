@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forest Bank - Control panel</title>
+    <link rel="stylesheet" href="bank-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <h1>Forest Bank</h1>
+      <div class="log-out">
+        <i class="fa-solid fa-power-off"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-menu">
+        <div class="tile">
+          <h2>Your savings:</h2>
+          <div class="tile-center">
+            <p>0 USD</p>
+          </div>
+        </div>
+        <div class="tile">
+          <h2>Your cards:</h2>
+          <div class="tile-center">
+            <p class="credit-card-number">************3928</p>
+          </div>
+        </div>
+        <div class="tile">
+          <h2>Transfer money</h2>
+          <div class="tile-center">
+            <div class="input-box">
+              <label>
+                <p>Receiver</p>
+                <input type="text" />
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <p>Value</p>
+                <input type="number" />
+              </label>
+            </div>
+            <button>Send</button>
+          </div>
+        </div>
+        <div class="tile">
+          <h2>Deposit money</h2>
+          <div class="tile-center">
+            <div class="input-box">
+              <label>
+                <p>Value</p>
+                <input type="number" />
+              </label>
+            </div>
+            <button>Send</button>
+          </div>
+        </div>
+      </section>
+      <a href="#activities-section">
+        <div class="go-down">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </a>
+      <section class="activities" id="activities-section">
+        <h3>Your activities</h3>
+        <div class="activities-center">
+          <div class="activities-box">
+            <div class="activity deposit">
+              <p class="left-lp"><span>3.</span></p>
+              <p class="type"><span>Deposit</span></p>
+              <p class="right-value"><span>+ 500 USD</span></p>
+            </div>
+            <div class="activity withdrawal">
+              <p class="left-lp"><span>2.</span></p>
+              <p class="type"><span>Withdrawal</span></p>
+              <p class="right-value"><span>- 250 USD</span></p>
+            </div>
+            <div class="activity deposit">
+              <p class="left-lp"><span>1.</span></p>
+              <p class="type"><span>Deposit</span></p>
+              <p class="right-value"><span>+ 100 USD</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="bank-script.js"></script>
+  </body>
+</html>

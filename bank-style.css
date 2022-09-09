@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  position: relative;
+}
+
+header {
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f1bb';
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(0, 130, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin-right: 7px;
+  margin-left: 20px;
+}
+
+.log-out {
+  font-size: 30px;
+  line-height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.log-out:hover {
+  color: rgb(0, 130, 0);
+}
+
+main {
+  height: calc(100vh - 60px);
+}
+
+.main-menu {
+  background-image: url('forest.jpg');
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  gap: 50px;
+}
+
+.tile {
+  position: relative;
+  width: 40vw;
+  min-width: 400px;
+  min-height: 230px;
+  height: 30vh;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.tile-center {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.input-tile {
+  width: 300px;
+}
+
+.tile-center p {
+  font-size: 30px;
+  text-align: left;
+}
+
+.credit-card-number::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f09d';
+  display: inline-block;
+  color: rgb(0, 130, 0);
+  margin-right: 20px;
+}
+
+.input-box {
+  width: 150px;
+  margin: auto;
+}
+
+.input-box p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  margin-bottom: 20px;
+  height: 30px;
+  width: 150px;
+  outline: none;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.input-box input:focus {
+  border: 2px solid rgb(0, 130, 0);
+}
+
+.tile-center button {
+  width: 100px;
+  padding: 10px 0;
+  border: 2px solid rgb(0, 130, 0);
+  background-color: rgb(0, 160, 0);
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.transfer-info,
+.deposit-info {
+  margin-bottom: 10px;
+}
+
+.go-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fa-angles-down {
+  color: rgb(0, 160, 0);
+  transform: translateX(-50%);
+}
+
+.activities {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.activities h3 {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.activities-center {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities-box-wrapper {
+  height: 80%;
+  width: 80%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 18px 0px rgb(101, 101, 101);
+  -moz-box-shadow: 0px 2px 18px 0px rgb(101, 101, 101);
+  box-shadow: 0px 2px 18px 0px rgb(101, 101, 101);
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.activities-box {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.activity {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.left-lp > span {
+  margin-right: auto;
+}
+
+.right-value > span {
+  margin-left: auto;
+}
+
+.left-lp,
+.type,
+.right-value {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.deposit {
+  background-color: rgb(200, 255, 200);
+}
+
+.withdrawal {
+  background-color: rgb(255, 220, 220);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 110, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 130, 0);
+}
+
+.activities-box::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.activities-box::-webkit-scrollbar-thumb {
+  background: rgb(0, 180, 0);
+}
+
+.currency {
+  font-weight: 500;
+}
+
+.accounts {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  background-color: rgb(228, 253, 107);
+  padding: 10px;
+  transform: translateX(170px);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.accounts:hover {
+  transform: translateX(0);
+}
+
+.accounts::before {
+  content: 'DEMO Accounts';
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  border-left: 1px solid #000;
+  border-radius: 0 20px 20px 0;
+  background-color: rgb(228, 253, 107);
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  bottom: 0;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1350px) {
+  .input-tile {
+    width: 200px;
+    right: 0;
+  }
+}
+
+@media (max-width: 900px), (max-height: 600px) {
+  .main-menu {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .go-down {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .activity {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px), (max-height: 600px) {
+  .tile {
+    min-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .input-box {
+    width: 100px;
+  }
+
+  .tile-center {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    margin: auto 0;
+  }
+
+  .tile-center p {
+    font-size: 16px;
+  }
+
+  .tile-center input {
+    width: 100px;
+  }
+
+  #deposit-money {
+    height: 42px;
+    align-self: center;
+  }
+
+  p.credit-card-number,
+  p.savings {
+    font-size: 24px;
+  }
+
+  .activities h3 {
+    font-size: 28px;
+  }
+
+  .activity {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .white-box {
+    padding: 20px;
+  }
+
+  .accounts {
+    top: 0;
+    right: 50%;
+    bottom: initial;
+    transform: translate(50%, -150px);
+  }
+
+  .accounts::before {
+    bottom: initial;
+    writing-mode: horizontal-tb;
+    transform: scale(1, 1);
+    top: initial;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    width: auto;
+    border-radius: 0 0 20px 20px;
+    border-left: none;
+    border-top: 1px solid #000;
+  }
+
+  .accounts:hover {
+    transform: translate(50%, 0);
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .activity {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  header h1::before {
+    margin-left: 5px;
+  }
+
+  .log-out {
+    margin: auto;
+  }
+
+  .white-box {
+    padding: 10px;
+  }
+}

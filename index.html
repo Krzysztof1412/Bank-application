@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Bank - Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bank-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="login-section">
+        <div class="white-box">
+            <h1>Forest Bank</h1>
+            <h2>Log in to your account</h1>
+            <form>
+                <div class="login-input">
+                    <label>
+                        <p>Login:</p>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="password-input">
+                    <label>
+                        <p>Password:</p>
+                        <input type="password">
+                    </label>
+                </div>
+                <div class="failed-log"></div>
+                <input type="submit" value="Log in" id="login-button">
+            </form>
+        </div>
+    </section>
+
+    <header class="hidden">
+        <div></div>
+        <h1>Forest Bank</h1>
+        <div class="log-out">
+          <i class="fa-solid fa-power-off"></i>
+        </div>
+      </header>
+  
+      <main class="hidden">
+        <section class="main-menu">
+          <div class="tile">
+            <h2>Your savings:</h2>
+            <div class="tile-center">
+              <p class="savings">0</p>
+            </div>
+          </div>
+          <div class="tile">
+            <h2>Your cards:</h2>
+            <div class="tile-center" id="credit-cards"></div>
+          </div>
+          <div class="tile">
+            <h2>Transfer money</h2>
+            <div class="tile-center input-tile">
+              <div class="input-box">
+                <label>
+                  <p>Receiver</p>
+                  <input type="text"  id="receiver" autocomplete="off"/>
+                </label>
+              </div>
+              <div class="input-box">
+                <label>
+                  <p>Value</p>
+                  <input type="number" id="transfer-value"/>
+                </label>
+              </div>
+              <div class="transfer-info"></div>
+              <button id="transfer-money">Send</button>
+            </div>
+          </div>
+          <div class="tile">
+            <h2>Deposit money</h2>
+            <div class="tile-center input-tile">
+              <div class="input-box">
+                <label>
+                  <p>Value</p>
+                  <input type="number" id="deposit-value"/>
+                </label>
+              </div>
+              <div class="deposit-info"></div>
+              <button id="deposit-money">Send</button>
+            </div>
+          </div>
+        </section>
+        <a href="#activities-section">
+          <div class="go-down">
+            <i class="fa-solid fa-angles-down"></i>
+          </div>
+        </a>
+        <section class="activities" id="activities-section">
+          <h3>Your activities</h3>
+          <div class="activities-center">
+            <div class="activities-box-wrapper">
+              <div class="activities-box">
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="accounts">
+        <table>
+          <thead>
+            <tr>
+              <td>Login</td>
+              <td>Password</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>chris</td>
+              <td>chris10</td>
+            </tr>
+            <tr>
+              <td>json</td>
+              <td>jsgod</td>
+            </tr>
+            <tr>
+              <td>jessica</td>
+              <td>jessy70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
